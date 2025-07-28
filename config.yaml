@@ -1,0 +1,54 @@
+# ========== EXPERIMENT SETTINGS ==========
+EXPERIMENT:
+  base_dir: logs/zrange2
+  exp_name: null             # If null, auto-generate with timestamp
+  auto_timestamp: true
+  seed: 42
+
+# ========== DATA SETTINGS ==========
+DATA:
+  train_dir:      data/train
+  test_dir:       data/val
+  psf_bank_path:  data/psf_bank_zrange_150-250_step_e-3.npz
+  num_workers: 4
+  pin_memory: true
+
+
+# ========== MODEL ==========
+MODEL:
+  name: dncnn                # "unet" or "dncnn"
+
+# ========== TRAINING ==========
+TRAIN:
+  epochs: 50
+  train_batch_size: 32
+  test_batch_size: 32
+  test_every: 1             # Evaluate every N epochs
+
+# ========== OPTIMIZER ==========
+OPTIMIZER:
+  type: adamw               # adamw only
+  base_lr: 0.0001
+  weight_decay: 0.01
+  beta1: 0.9
+  beta2: 0.999
+
+# ========== LR SCHEDULER ==========
+SCHEDULER:
+  type: steplr              # steplr, cosineannealinglr, exponentiallr
+  step_size: 2000
+  gamma: 0.35
+
+# ========== LOGGING ==========
+LOGGING:
+  save_checkpoints: true
+  save_best_after: 10        # Save best checkpoints after this many epochs
+  save_config: true
+  verbose: true
+  print_frequency: 10
+  tensorboard: true
+
+TENSORBOARD:
+  log_timing: true
+  log_hparams: true
+  log_images: true
