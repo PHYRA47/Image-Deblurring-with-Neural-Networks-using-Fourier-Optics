@@ -8,6 +8,15 @@ __pycache__/
 *.pyc
 
 logs/*
+!logs/zrange1/DNCNN_0727_170005/checkpoints/best_psnr.pth
+!logs/zrange1/DNCNN_0727_170005/config.yaml
+!logs/zrange1/DNCNN_0727_170005/inference_results/0728_033305/metrics.csv
+!logs/zrange1/DNCNN_0727_170005/inference_results/0728_033305/sample_grid_033846.png
+
+!logs/zrange1/UNET_0727_165934/checkpoints/best_psnr.pth
+!logs/zrange1/UNET_0727_165934/config.yaml
+!logs/zrange1/UNET_0727_165934/inference_results/0728_033104/metrics.csv
+!logs/zrange1/UNET_0727_165934/inference_results/0728_033104/sample_grid_033249.png
 
 data/*
 !data/dataset.py
