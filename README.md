@@ -145,11 +145,11 @@ This project demonstrates a physically inspired approach to image deblurring by 
 
 Both models perform competitively, with DnCNN slightly outperforming U-Net in our reported test case. Visual and quantitative comparisons (PSNR, SSIM, MSE) confirm that the networks successfully learns to reverse the simulated degradations.
 
-## 📘 Technical Report
+## 📘 Reports
 
-👉 [PDF](https://studentuef-my.sharepoint.com/:b:/g/personal/frnegasa_uef_fi/EQ-l6nWv5jFJoA3TWDrAW2YBYONNVIB8tlnCv2gkQSo4GQ?e=qmD6iG)
+👉 Technical Report [[PDF](https://studentuef-my.sharepoint.com/:b:/g/personal/frnegasa_uef_fi/EQ-l6nWv5jFJoA3TWDrAW2YBYONNVIB8tlnCv2gkQSo4GQ?e=qmD6iG)] [[Overleaf](https://www.overleaf.com/read/rmmrhndxpkht#6d2efe)]
 
-👉 [Overleaf](https://www.overleaf.com/read/rmmrhndxpkht#6d2efe)
+👉 Literature Review [[PDF](https://studentuef-my.sharepoint.com/:b:/g/personal/frnegasa_uef_fi/EfVVey3vDepDkZoXrASqwLUBbZORjO-4MfwHv2wvLmbeig?e=MRyues)] [[Overleaf](https://www.overleaf.com/read/hsjqkgdpfkhf#e5b3b7)]
 
 
 ---
