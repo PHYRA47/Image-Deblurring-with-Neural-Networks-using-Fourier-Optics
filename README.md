@@ -44,7 +44,7 @@ To prevent computation overhead due to Fourier Transform calculation, PSFs are c
 ```
 python -m data.PSFPrecomputer.py
 ```
-and outputing:
+and outputting:
 ```
 Computed PSF bank for z range (1.84, 2.2) with step 0.01.
 Number of z values: 37
@@ -58,11 +58,11 @@ Edit the `config.yaml` file for training options, then run:
 ```bash
 python train.py
 ```
-Supported models: `U-Net`, `DnCNN`. (Specify the model nam in `config.yaml` under `MODEL.name`)
+Supported models: `U-Net`, `DnCNN`. (Specify the model name in `config.yaml` under `MODEL.name`)
 Loss function: MSE (Mean Squared Error)
 ## Evaluate a checkpoint
 Two modes for inference:
-### Batch Inferenc with `inference.py`
+### Batch Inference with `inference.py`
 To deblur all sharp test images, for instance, update the constant at the top accordingly:
 ```python
 EXPERIMENT_PATH     = "logs/<experiment_name>"
@@ -83,7 +83,7 @@ This will:
 ```
 logs/<experiment_name>/inference_results/<timestamp>/
 ```
-Folder structure would look like the following.
+The folder structure would look like the following.
 ```
 logs/
 ├── <experiment_name>/
@@ -141,9 +141,9 @@ These are computed during validation.
 
 ## Conclusion
 
-This project demonstrates a physically inspired approach to image deblurring by simulating realistic optical blur through Fourier optics. By integrating depth-dependent and chromatic aberration-aware PSFs into the data generation pipeline, we train deep learning models like DnCNN and U-Net to effectively restore sharpness from blurred inputs.
+This experiment demonstrates a physically inspired approach to image deblurring by simulating realistic optical blur through Fourier optics. By integrating depth-dependent and chromatic aberration-aware PSFs into the data generation pipeline, deep learning models like DnCNN and U-Net are trained to effectively restore sharpness from blurred inputs.
 
-Both models perform competitively, with DnCNN slightly outperforming U-Net in our reported test case. Visual and quantitative comparisons (PSNR, SSIM, MSE) confirm that the networks successfully learns to reverse the simulated degradations.
+Both models perform competitively, with DnCNN slightly outperforming U-Net in my reported test case. Visual and quantitative comparisons (PSNR, SSIM, MSE) confirm that the networks successfully learns to reverse the simulated degradations.
 
 ## 📘 Reports
 
