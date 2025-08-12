@@ -154,8 +154,4 @@ Both models perform competitively, with DnCNN slightly outperforming U-Net in ou
 
 ---
 
-## 📬 Contact 📎
 
-For questions, feel free to reach out.
-
-Thanks you and happy deblurring!
